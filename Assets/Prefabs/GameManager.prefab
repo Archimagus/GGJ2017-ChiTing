@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1130436268328282}
+  m_IsPrefabParent: 1
+--- !u!1 &1130436268328282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4897468691124342}
+  - component: {fileID: 114552785481623436}
+  - component: {fileID: 114198007360886538}
+  - component: {fileID: 114942364122358034}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4897468691124342
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1130436268328282}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.55611694, y: -0.16164643, z: -0.53125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114198007360886538
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1130436268328282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0b223a2c1b2a7145b91a40a52881946, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerDeviceDetected: 1
+--- !u!114 &114552785481623436
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1130436268328282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7688ff721647f414ab1b2ba25907c599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  controllerManager: {fileID: 114198007360886538}
+  pauseCanvas: {fileID: 0}
+  pauseManager: {fileID: 0}
+  levelMusic: {fileID: 1310062276470458, guid: 6b30707fc7ff980469cf57363c7b78e3, type: 2}
+--- !u!114 &114942364122358034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1130436268328282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1fc99642d1313f4daa9e6e270108944, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerManager: {fileID: 0}
+  pauseCanvas: {fileID: 0}
+  controllerHidesCursor: 0
+  isPaused: 0
+  normalFontSize: 20
+  selectedFontSize: 22
+  currentButton: 0
